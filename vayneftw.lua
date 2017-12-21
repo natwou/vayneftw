@@ -1,6 +1,6 @@
 if myHero.charName ~= "Vayne" then return end
 
-local ver = "0.1"
+local ver = "0.2"
 function AutoUpdate(data)
     if tonumber(data) > tonumber(ver) then
         DownloadFileAsync("https://raw.githubusercontent.com/natwou/vayneftw/master/vayneftw.lua", SCRIPT_PATH .. "vayneftw.lua", function() PrintChat("Update Complete, please 2x F6!") return end)
